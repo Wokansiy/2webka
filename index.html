@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic ArtVibe Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Cosmic ArtVibe Gallery</h1>
+        <p>Explore art from across the universe</p>
+    </header>
+
+    <div class="container">
+        <div class="filter-panel">
+            <label for="category">Select Nebula:</label>
+            <select id="category">
+                <option value="all">All Stars</option>
+                <option value="abstract">Abstract Nebula</option>
+                <option value="landscape">Cosmic Landscapes</option>
+                <option value="portrait">Stellar Portraits</option>
+            </select>
+        </div>
+
+        <div class="card-container" id="card-container"></div>
+    </div>
+
+    <!-- Subscription Modal -->
+    <div class="modal" id="subscription-modal">
+        <div class="modal-content">
+            <h2>Join the Cosmic Newsletter!</h2>
+            <p>Receive interstellar updates on new art prints.</p>
+            <button id="subscribe-btn">Join the Stars</button>
+            <button id="decline-btn">Drift Away</button>
+        </div>
+    </div>
+
+    <!-- Advertisement Modal -->
+    <div class="modal" id="ad-modal">
+        <div class="modal-content">
+            <h2>Galactic Sale!</h2>
+            <p>20% off all prints this light-year!</p>
+            <p>Warp in: <span id="countdown">5</span>s</p>
+            <button id="close-ad-btn" disabled>Close Portal</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
